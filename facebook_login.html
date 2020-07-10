@@ -51,14 +51,13 @@
 
   function getUser(){
     FB.api(
-    "/3474898919188020/",
-    function (response) {
-      if (response && !response.error) {
-        /* handle the result */
-        console.log('user: ' + JSON.stringify(response))
+      '/3474898919188020/friends',
+      'GET',
+      {},
+      function(response) {
+          // Insert your code here
       }
-    }
-);
+    );
   }
  
   function testAPI() {                      // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
