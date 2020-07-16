@@ -69,7 +69,7 @@
   function testAPI(
   accessToken) { // Testing Graph API after login.  See statusChangeCallback() for when this call is made.
     console.log('Welcome!  Fetching your information.... ');
-    FB.api('/me?fields=id,name,picture', function (response) {
+    FB.api('/me?fields=id,name,picture,link', function (response) {
       console.log('Successful login for: ' + response.name);
       console.log('response : ' + JSON.stringify(response))
       document.getElementById('status').innerHTML =
